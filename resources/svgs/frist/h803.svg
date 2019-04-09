@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="74px" height="24px" viewBox="-0.153 0 74 24" enable-background="new -0.153 0 74 24"
+	 xml:space="preserve">
+<defs>
+</defs>
+<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="35.07" cy="11.826" r="10"/>
+<g>
+	<g>
+		<path d="M58.299,3.474c4.536,3,9.071,6,13.607,9c0.81,0.536,1.56-0.764,0.757-1.295c-4.536-3-9.071-6-13.607-9
+			C58.247,1.643,57.497,2.943,58.299,3.474L58.299,3.474z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M45.449,12.474c4.536-3,9.072-6,13.607-9c0.803-0.531,0.053-1.831-0.757-1.295c-4.536,3-9.072,6-13.607,9
+			C43.889,11.709,44.639,13.009,45.449,12.474L45.449,12.474z"/>
+	</g>
+</g>
+<line stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="0" y1="11.826" x2="18.169" y2="11.826"/>
+<polygon points="13.169,7.208 21.169,11.826 13.169,16.445 "/>
+<rect id="_x3C_Slice_x3E__86_" fill="none" width="73.567" height="23.186"/>
+</svg>
