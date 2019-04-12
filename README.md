@@ -18,6 +18,3 @@ Inget, för tillfället :)
 * Bygg en grund för sidan
 * Skapa underlag för tumbling och trampett (fristående kommer mycket senare)
 * Räkna svårighets och komposiotionspoäng baserat på användarens input
-
-
-
