@@ -1,62 +1,2061 @@
 <!DOCTYPE HTML>
 <html lang="sv">
+
 <head>
-	<meta charset="utf-8">
-	<title>Underlag</title>
-	<meta name="description" content="Underlagsgenerator">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="scripts/knockout-3.5.0.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Underlag</title>
+    <meta name="description" content="Underlagsgenerator">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/knockout-3.5.0.js" type="text/javascript"></script>
 </head>
+
 <body>
-	<div id="nav-placeholder"></div>
-	<!-- Tab content -->
-	<div id="Trampett" class="tabcontent">
-	  <h3>Trampett</h3>
-	   <table style="width:100%">
-	   	<thead>
-			  <tr>
-			    <th>Kod</th>
-			    <th>Namn</th>
-			    <th>Symbol</th>
-			    <th>Poäng</th>
-			  </tr>
-		  </thead>
-		  <tbody>
-			  <tr>
-			    <td>Jill</td>
-			    <td>Smith</td>
-			    <td>50</td>
-			    <td>50</td>
-			  </tr>
-			  <tr>
-			    <td>Eve</td>
-			    <td>Jackson</td>
-			    <td>94</td>
-			    <td>94</td>
-			  </tr>
-		  </tbody>
-		</table> 
-	</div>
-
-	<div id="Tumbling" class="tabcontent">
-	  <h3>Tumbling</h3>
-	  <p>Tumbling is the capital of France.</p>
-	</div>
-
-	<div id="Fristående" class="tabcontent">
-	  <h3>Fristående</h3>
-	  <p>Fristående is the capital of Japan.</p>
-	</div> 
-
-
-	<p>First name : <span data-bind="text: firstName"></span></p>
-	<p>First name : <input data-bind="value: firstName"></span></p>
-
-	<script src="scripts/underlag.js" type="text/javascript"></script>
-
+    <div id="nav-placeholder"></div>
+    <div id="Trampett" class="tabcontent">
+        <h3>Trampett</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kod</th>
+                    <th>Namn</th>
+                    <th>Poäng</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bold">Tr1</td>
+                    <td>Hjulning</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tr1.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr2</td>
+                    <td>180° in - 180° ut</td>
+                    <td>0.50</td>
+                    <td><img class="symbol" src="resources/svgs/tr2.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr3</td>
+                    <td>Överslag 180° in 360°</td>
+                    <td>0.55</td>
+                    <td><img class="symbol" src="resources/svgs/tr3.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr4</td>
+                    <td>Överslag 180° in 540°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/tr4.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr5</td>
+                    <td>Tsukahara</td>
+                    <td>0.70</td>
+                    <td><img class="symbol" src="resources/svgs/tr5.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr6</td>
+                    <td>Tsukahara pik</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/tr6.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr7</td>
+                    <td>Tsukahara sträckt</td>
+                    <td>0.85</td>
+                    <td><img class="symbol" src="resources/svgs/tr7.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr8</td>
+                    <td>Tsukahara sträckt 360°/Kasamatsu</td>
+                    <td>1.15</td>
+                    <td><img class="symbol" src="resources/svgs/tr8.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr9</td>
+                    <td>Tsukahara sträckt 720°/Kasamatsu 360°</td>
+                    <td>1.45</td>
+                    <td><img class="symbol" src="resources/svgs/tr9.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr10</td>
+                    <td>Tsukahara dubbel</td>
+                    <td>1.50</td>
+                    <td><img class="symbol" src="resources/svgs/tr10.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr11</td>
+                    <td>Tsukahara sträckt 1080°</td>
+                    <td>1.75</td>
+                    <td><img class="symbol" src="resources/svgs/tr11.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr22</td>
+                    <td>Överslag</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr22.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr23</td>
+                    <td>Överslag 360°</td>
+                    <td>0.50</td>
+                    <td><img class="symbol" src="resources/svgs/tr23.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr24</td>
+                    <td>Överslag 540°</td>
+                    <td>0.55</td>
+                    <td><img class="symbol" src="resources/svgs/tr24.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr25</td>
+                    <td>Överslag volt (ÖV)</td>
+                    <td>0.75</td>
+                    <td><img class="symbol" src="resources/svgs/tr25.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr26</td>
+                    <td>ÖV pik</td>
+                    <td>0.85</td>
+                    <td><img class="symbol" src="resources/svgs/tr26.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr27</td>
+                    <td>ÖV sträckt</td>
+                    <td>0.90</td>
+                    <td><img class="symbol" src="resources/svgs/tr27.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr28</td>
+                    <td>ÖV 180°</td>
+                    <td>0.95</td>
+                    <td><img class="symbol" src="resources/svgs/tr28.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr29</td>
+                    <td>ÖV pik 180°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/tr29.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr30</td>
+                    <td>ÖV sträckt 180°</td>
+                    <td>1.05</td>
+                    <td><img class="symbol" src="resources/svgs/tr30.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr31</td>
+                    <td>ÖV sträckt 360°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/tr31.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr32</td>
+                    <td>ÖV sträckt 540°</td>
+                    <td>1.35</td>
+                    <td><img class="symbol" src="resources/svgs/tr32.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr33</td>
+                    <td>ÖV sträckt 720°</td>
+                    <td>1.50</td>
+                    <td><img class="symbol" src="resources/svgs/tr33.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr34</td>
+                    <td>ÖV sträckt 900</td>
+                    <td>1.65</td>
+                    <td><img class="symbol" src="resources/svgs/tr34.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr35</td>
+                    <td>ÖDV 180°</td>
+                    <td>1.70</td>
+                    <td><img class="symbol" src="resources/svgs/tr35.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr36</td>
+                    <td>ÖDV pik 180°</td>
+                    <td>1.90</td>
+                    <td><img class="symbol" src="resources/svgs/tr36.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr37</td>
+                    <td>ÖDV sträckt 180°</td>
+                    <td>2.20</td>
+                    <td><img class="symbol" src="resources/svgs/tr37.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr41</td>
+                    <td>Frivolt grupperad</td>
+                    <td>0.30</td>
+                    <td><img class="symbol" src="resources/svgs/tr41.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr42</td>
+                    <td>Frivolt pik</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tr42.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr43</td>
+                    <td>Frivolt sträckt</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr43.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr44</td>
+                    <td>Frivolt grupperad 180°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tr44.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr45</td>
+                    <td>Frivolt pik 180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr45.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr46</td>
+                    <td>Frivolt sträckt 180°</td>
+                    <td>0.45</td>
+                    <td><img class="symbol" src="resources/svgs/tr46.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr47</td>
+                    <td>Frivolt sträckt 360°</td>
+                    <td>0.50</td>
+                    <td><img class="symbol" src="resources/svgs/tr47.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr48</td>
+                    <td>Frivolt sträckt 540°</td>
+                    <td>0.55</td>
+                    <td><img class="symbol" src="resources/svgs/tr48.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr49</td>
+                    <td>Frivolt sträckt 720°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/tr49.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr50</td>
+                    <td>Frivolt sträckt 900°</td>
+                    <td>0.65</td>
+                    <td><img class="symbol" src="resources/svgs/tr50.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr51</td>
+                    <td>Frivolt sträckt 1080°</td>
+                    <td>0.70</td>
+                    <td><img class="symbol" src="resources/svgs/tr51.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr52</td>
+                    <td>Frivolt sträckt 1260°</td>
+                    <td>0.75</td>
+                    <td><img class="symbol" src="resources/svgs/tr52.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr53</td>
+                    <td>Dubbel frivolt (DF)</td>
+                    <td>0.65</td>
+                    <td><img class="symbol" src="resources/svgs/tr53.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr54</td>
+                    <td>DF pik</td>
+                    <td>0.85</td>
+                    <td><img class="symbol" src="resources/svgs/tr54.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr55</td>
+                    <td>DF sträckt</td>
+                    <td>0.95</td>
+                    <td><img class="symbol" src="resources/svgs/tr55.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr56</td>
+                    <td>DF 180° in</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/tr56.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr57</td>
+                    <td>DF 180° ut</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/tr57.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr58</td>
+                    <td>DF 180° in 360° ut</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tr58.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr59</td>
+                    <td>DF 540°</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tr59.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr60</td>
+                    <td>DF 360° in 180° ut</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tr60.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr61</td>
+                    <td>DF pik 180° in</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/tr61.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr62</td>
+                    <td>DF pik 180° ut</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/tr62.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr63</td>
+                    <td>DF pik/sträckt 540° ut</td>
+                    <td>1.35</td>
+                    <td><img class="symbol" src="resources/svgs/tr63.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr64</td>
+                    <td>DF pik/sträckt 900° ut</td>
+                    <td>1.65</td>
+                    <td><img class="symbol" src="resources/svgs/tr64.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr65</td>
+                    <td>DF sträckt 180° in</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tr65.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr66</td>
+                    <td>DF sträckt 180° ut</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tr66.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr67</td>
+                    <td>DF sträckt 180° in 360°</td>
+                    <td>1.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr67.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr68</td>
+                    <td>DF sträckt 360° in 180°</td>
+                    <td>1.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr68.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr69</td>
+                    <td>DF sträckt 54° ut</td>
+                    <td>1.40</td>
+                    <td><img class="symbol" src="resources/svgs/tr69.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr70</td>
+                    <td>DF sträckt 900°</td>
+                    <td>1.70</td>
+                    <td><img class="symbol" src="resources/svgs/tr70.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr71</td>
+                    <td>DF sträckt 1260°</td>
+                    <td>2.00</td>
+                    <td><img class="symbol" src="resources/svgs/tr71.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr72</td>
+                    <td>Trippel volt 180°</td>
+                    <td>1.85</td>
+                    <td><img class="symbol" src="resources/svgs/tr72.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr73</td>
+                    <td>Trippel volt pik 180°</td>
+                    <td>2.15</td>
+                    <td><img class="symbol" src="resources/svgs/tr73.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tr74</td>
+                    <td>Trippel volt 540°</td>
+                    <td>2.25</td>
+                    <td><img class="symbol" src="resources/svgs/tr74.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro1</td>
+                    <td>Grupperat ljushopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro1.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro2</td>
+                    <td>Ljushopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro2.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro3</td>
+                    <td>Ljushopp med bendelning (X-hopp)</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro3.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro4</td>
+                    <td>Pikerat grenhopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro4.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro5</td>
+                    <td>Pikerat ljushopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro5.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro20</td>
+                    <td>Flyverspring</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro20.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro21</td>
+                    <td>Grenander</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro21.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro22</td>
+                    <td>Grenhopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro22.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro23</td>
+                    <td>Hjulning</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro23.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro24</td>
+                    <td>Huvudöverslag</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro24.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro25</td>
+                    <td>Katthopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro25.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro26</td>
+                    <td>Kullerbytta</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro26.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro27</td>
+                    <td>Ljushopp med hoppredskap</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro27.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro28</td>
+                    <td>Mellanhopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro28.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro29</td>
+                    <td>Rondat</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro29.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro30</td>
+                    <td>Sidhopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro30.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tro31</td>
+                    <td>Ytterhopp</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tro31.svg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="Tumbling" class="tabcontent">
+        <h3>Tumbling</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kod</th>
+                    <th>Namn</th>
+                    <th>Poäng</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bold">Tu1</td>
+                    <td>Hjulning</td>
+                    <td>0.00</td>
+                    <td><img class="symbol" src="resources/svgs/tu1.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu2</td>
+                    <td>Handvolt</td>
+                    <td>0.15</td>
+                    <td><img class="symbol" src="resources/svgs/tu2.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu3</td>
+                    <td>Handvolt II</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/tu3.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu4</td>
+                    <td>Frivolt grupperad</td>
+                    <td>0.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu4.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu5</td>
+                    <td>Frivolt grupperad 180°</td>
+                    <td>0.30</td>
+                    <td><img class="symbol" src="resources/svgs/tu5.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu6</td>
+                    <td>Frivolt grupperad 360°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu6.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu7</td>
+                    <td>Frivolt pik</td>
+                    <td>0.30</td>
+                    <td><img class="symbol" src="resources/svgs/tu7.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu8</td>
+                    <td>Frivolt pik 180°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu8.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu9</td>
+                    <td>Frivolt sträckt</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu9.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu10</td>
+                    <td>Frivolt sträckt 180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/tu10.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu11</td>
+                    <td>Frivolt sträckt 360°</td>
+                    <td>0.45</td>
+                    <td><img class="symbol" src="resources/svgs/tu11.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu12</td>
+                    <td>Frivolt sträckt 540°</td>
+                    <td>0.50</td>
+                    <td><img class="symbol" src="resources/svgs/tu12.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu13</td>
+                    <td>Frivolt sträckt 720°</td>
+                    <td>0.55</td>
+                    <td><img class="symbol" src="resources/svgs/tu13.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu14</td>
+                    <td>Frivolt sträckt 900°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/tu14.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu15</td>
+                    <td>Dubbel frivolt (DF)</td>
+                    <td>0.75</td>
+                    <td><img class="symbol" src="resources/svgs/tu15.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu16</td>
+                    <td>DF grupperad 180°</td>
+                    <td>0.90</td>
+                    <td><img class="symbol" src="resources/svgs/tu16.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu17</td>
+                    <td>DF grupperad 360°</td>
+                    <td>1.05</td>
+                    <td><img class="symbol" src="resources/svgs/tu17.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu18</td>
+                    <td>DF grupperad 540°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/tu18.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu19</td>
+                    <td>DF pik</td>
+                    <td>0.95</td>
+                    <td><img class="symbol" src="resources/svgs/tu19.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu20</td>
+                    <td>DF pik 180° ut</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tu20.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu21</td>
+                    <td>DF pik-sträckt 360°</td>
+                    <td>1.30</td>
+                    <td><img class="symbol" src="resources/svgs/tu21.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu22</td>
+                    <td>DF pik-sträckt 540° ut</td>
+                    <td>1.45</td>
+                    <td><img class="symbol" src="resources/svgs/tu22.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu23</td>
+                    <td>DF sträckt</td>
+                    <td>1.05</td>
+                    <td><img class="symbol" src="resources/svgs/tu23.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu24</td>
+                    <td>DF sträckt 180°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/tu24.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu25</td>
+                    <td>DF sträckt 360°</td>
+                    <td>1.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu25.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu26</td>
+                    <td>DF sträckt 540°</td>
+                    <td>1.50</td>
+                    <td><img class="symbol" src="resources/svgs/tu26.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu32</td>
+                    <td>Rondat</td>
+                    <td>0.15</td>
+                    <td><img class="symbol" src="resources/svgs/tu32.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu33</td>
+                    <td>Flick-flack</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/tu33.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu34</td>
+                    <td>Whipback</td>
+                    <td>0.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu34.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu35</td>
+                    <td>Salto grupperad</td>
+                    <td>0.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu35.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu36</td>
+                    <td>Menichelli/Arabia 180°</td>
+                    <td>0.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu36.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu37</td>
+                    <td>Salto grupperad 180°</td>
+                    <td>0.30</td>
+                    <td><img class="symbol" src="resources/svgs/tu37.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu38</td>
+                    <td>Salto grupperad 360°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu38.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu39</td>
+                    <td>Salto pik</td>
+                    <td>0.30</td>
+                    <td><img class="symbol" src="resources/svgs/tu39.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu40</td>
+                    <td>Salto pik 180°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu40.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu42</td>
+                    <td>Salto sträckt</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu42.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu43</td>
+                    <td>Salto sträckt 180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/tu43.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu44</td>
+                    <td>Whipback 360°</td>
+                    <td>0.35</td>
+                    <td><img class="symbol" src="resources/svgs/tu44.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu45</td>
+                    <td>Salto sträckt 360°</td>
+                    <td>0.45</td>
+                    <td><img class="symbol" src="resources/svgs/tu45.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu46</td>
+                    <td>Salto sträckt 540°</td>
+                    <td>0.50</td>
+                    <td><img class="symbol" src="resources/svgs/tu46.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu47</td>
+                    <td>Salto sträckt 720°</td>
+                    <td>0.55</td>
+                    <td><img class="symbol" src="resources/svgs/tu47.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu48</td>
+                    <td>Salto sträckt 900°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/tu48.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu49</td>
+                    <td>Salto sträckt 1080°</td>
+                    <td>0.65</td>
+                    <td><img class="symbol" src="resources/svgs/tu49.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu51</td>
+                    <td>Dubbel salto (DS)</td>
+                    <td>0.65</td>
+                    <td><img class="symbol" src="resources/svgs/tu51.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu52</td>
+                    <td>DS grupperad 180°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/tu52.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu53</td>
+                    <td>DS grupperad 360°</td>
+                    <td>0.95</td>
+                    <td><img class="symbol" src="resources/svgs/tu53.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu54</td>
+                    <td>DS grupperad 540°</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tu54.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu55</td>
+                    <td>DS grupperad 720°</td>
+                    <td>1.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu55.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu56</td>
+                    <td>DS pik</td>
+                    <td>0.85</td>
+                    <td><img class="symbol" src="resources/svgs/tu56.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu57</td>
+                    <td>DS pik 180°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/tu57.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu58</td>
+                    <td>DS sträckt</td>
+                    <td>0.95</td>
+                    <td><img class="symbol" src="resources/svgs/tu58.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu59</td>
+                    <td>DS sträckt 180°</td>
+                    <td>1.10</td>
+                    <td><img class="symbol" src="resources/svgs/tu59.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu60</td>
+                    <td>DS sträckt 360°</td>
+                    <td>1.25</td>
+                    <td><img class="symbol" src="resources/svgs/tu60.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu61</td>
+                    <td>DS sträckt 540°</td>
+                    <td>1.40</td>
+                    <td><img class="symbol" src="resources/svgs/tu61.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu62</td>
+                    <td>DS sträckt 720°</td>
+                    <td>1.55</td>
+                    <td><img class="symbol" src="resources/svgs/tu62.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu63</td>
+                    <td>DS sträckt 900°</td>
+                    <td>1.70</td>
+                    <td><img class="symbol" src="resources/svgs/tu63.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu64</td>
+                    <td>DS sträckt 1080°</td>
+                    <td>1.85</td>
+                    <td><img class="symbol" src="resources/svgs/tu64.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu65</td>
+                    <td>Trippel salto (TS)</td>
+                    <td>1.65</td>
+                    <td><img class="symbol" src="resources/svgs/tu65.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu66</td>
+                    <td>TS pik</td>
+                    <td>1.95</td>
+                    <td><img class="symbol" src="resources/svgs/tu66.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tu67</td>
+                    <td>TS 360°</td>
+                    <td>2.05</td>
+                    <td><img class="symbol" src="resources/svgs/tu67.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tuo1</td>
+                    <td>Handstående nedrullning</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tuo1.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tuo2</td>
+                    <td>Kullerbytta</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tuo2.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Tuo3</td>
+                    <td>Spagathandvolt</td>
+                    <td>0</td>
+                    <td><img class="symbol" src="resources/svgs/tuo3.svg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="Fristående" class="tabcontent">
+        <h3>Fristående</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kod</th>
+                    <th>Namn</th>
+                    <th>Poäng</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bold">P201</td>
+                    <td>Framåt: 360°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/p201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P401</td>
+                    <td>Framåt: 540°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p401.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P801</td>
+                    <td>Framåt: 720°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p801.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1001</td>
+                    <td>Framåt: 900°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1001.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1201</td>
+                    <td>Framåt: 1080°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/p1201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P202</td>
+                    <td>Bakåt: 360°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/p202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P402</td>
+                    <td>Bakåt: 540°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p402.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P802</td>
+                    <td>Bakåt: 720°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p802.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1002</td>
+                    <td>Bakåt: 900°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1002.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1202</td>
+                    <td>Bakåt: 1080°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/p1202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P203</td>
+                    <td>Framåt: 360°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/p203.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P403</td>
+                    <td>Framåt: 540°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p403.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P803</td>
+                    <td>Framåt: 720°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p803.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P204</td>
+                    <td>Bakåt: 360°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/p204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P404</td>
+                    <td>Bakåt: 540°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p404.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P804</td>
+                    <td>Bakåt: 720°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p804.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P405</td>
+                    <td>Framåt: 360°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p405.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P805</td>
+                    <td>Framåt: 540°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p805.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1005</td>
+                    <td>Framåt: 720°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1005.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P406</td>
+                    <td>Bakåt: 360°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/p406.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P806</td>
+                    <td>Bakåt: 540°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/p806.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1006</td>
+                    <td>Bakåt: 720°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1006.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P607</td>
+                    <td>Framåt: 360°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/p607.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1007</td>
+                    <td>Framåt: 540°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1007.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1207</td>
+                    <td>Framåt: 720°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/p1207.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P608</td>
+                    <td>Bakåt: 360°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/p608.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1008</td>
+                    <td>Bakåt: 540°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/p1008.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">P1208</td>
+                    <td>Bakåt: 720°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/p1208.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H201</td>
+                    <td>Ljushopp (J): 180°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H401</td>
+                    <td>Ljushopp (J): 360°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h401.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H601</td>
+                    <td>Ljushopp (J): 540°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h601.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H801</td>
+                    <td>Ljushopp (J): 360° till mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h801.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1001</td>
+                    <td>Ljushopp (J): 720°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1001.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H202</td>
+                    <td>Grenhopp (J): Pikerat grenhopp bendelning >135°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H402</td>
+                    <td>Grenhopp (J): Sidlantmätarhopp</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h402.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H602</td>
+                    <td>Grenhopp (J): Sidlantmätarhopp 180° vändning</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h602.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H802</td>
+                    <td>Grenhopp (J): Sidlantmätarhopp 360° vändning</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h802.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1002</td>
+                    <td>Grenhopp (J): Pikerat grenhopp till mage</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1002.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H403</td>
+                    <td>Vertikalt hopp (H): 180° vändning, benet ≥90°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h403.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H803</td>
+                    <td>Vertikalt hopp (H): 360° vändning, benet ≥90°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h803.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H204</td>
+                    <td>Vertikalt hopp (H): Pendelhopp - landning i våghalvstående</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H404</td>
+                    <td>Vertikalt hopp (H): 180° vändning bakåt</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h404.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H205</td>
+                    <td>Axelhopp (J): Grupperat hopp med ett ben</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h205.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H605</td>
+                    <td>Axelhopp (J): Grupperat hopp med 360°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h605.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H206</td>
+                    <td>Grupperat hopp (H/J): Grupperat hopp, båda knäna â‰¥90°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h206.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H406</td>
+                    <td>Grupperat hopp (H/J): Båda knäna ≥90°, 180° vändning</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h406.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H606</td>
+                    <td>Grupperat hopp (H/J): Båda knäna ≥90°, 360° vändning</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h606.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1006</td>
+                    <td>Grupperat hopp (H/J): Båda knäna ≥90°, 540° vändning</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1006.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H207</td>
+                    <td>Saxhopp (L): Framåt eller bakåt, benen <90°</td> <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h207.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H407</td>
+                    <td>Saxhopp (L): Första benet ≥90°, andra benet ≥120°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h407.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H208</td>
+                    <td>Saxhopp med vändning (L): 180°, bendelning â‰¤90° efter vändning</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h208.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H408</td>
+                    <td>Saxhopp med vändning (L): 180°, bendelning 90°-135° efter vändning</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h408.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H808</td>
+                    <td>Saxhopp med vändning (L): 180°, bendelning >135° efter vändning</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h808.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H209</td>
+                    <td>Galopphopp (L): 180° vändning</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h209.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H409</td>
+                    <td>Galopphopp (L): 360° vändning</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h409.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H809</td>
+                    <td>Galopphopp (L): 540° vändning</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h809.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H210</td>
+                    <td>Pikerat hopp (J/L): Benen under horisontalplan</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h210.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H610</td>
+                    <td>Pikerat hopp (J/L): Benen i horisontalplan</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h610.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H810</td>
+                    <td>Pikerat hopp (J): Grupperat hopp, landning liggande på mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h810.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1210</td>
+                    <td>Pikerat hopp (J): Landning liggande på mage</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1210.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H211</td>
+                    <td>Kosackhopp (H/J):</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h211.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H411</td>
+                    <td>Kosackhopp (H/J): 180° vändning</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h411.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H811</td>
+                    <td>Kosackhopp (H/J): 360° vändning</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h811.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H212</td>
+                    <td>Sissonne: Bendelning <135°</td> <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h212.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H412</td>
+                    <td>Sissonne: Bendelning 135°-180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h412.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H812</td>
+                    <td>Sissonne: Ring</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h812.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H213</td>
+                    <td>Ringhopp (J): Fötter i höjd med höfterna</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h213.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H613</td>
+                    <td>Ringhopp (J): Fötter i höjd med axlarna</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h613.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H813</td>
+                    <td>Ringhopp (J): Fötter i höjd med huvudet</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h813.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1013</td>
+                    <td>Ringhopp (J): 180°, fötter i höjd med axlarna</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1013.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1213</td>
+                    <td>Ringhopp (J): 360°, fötter i höjd med axlarna</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1213.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H214</td>
+                    <td>Lantmätarhopp (J/L): Böjt främre ben</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h214.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H215</td>
+                    <td>Lantmätarhopp (J/L): Båda benen böjda 90°, bendelning >135°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h215.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H415</td>
+                    <td>Lantmätarhopp (J/L): 180° vändning, bendelning >135°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h415.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H615</td>
+                    <td>Lantmätarhopp (J/L): Båda benen böjda 90°, bendelning >135° huvudet klart bakåt</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h615.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H216</td>
+                    <td>Splitthopp framåt (L): Bendelning <135°</td> <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h216.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H416</td>
+                    <td>Splitthopp framåt (L): Bendelning 135°-180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h416.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H616</td>
+                    <td>Splitthopp framåt (L): Bendelning 180°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h616.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1016</td>
+                    <td>Splitthopp framåt (J): Till liggande på mage, bendelning >135°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1016.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1216</td>
+                    <td>Splitthopp framåt (L): Med ringhopp</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1216.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H217</td>
+                    <td>Splitthopp framåt (L): Bendelning <180° med kick</td> <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/h217.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H417</td>
+                    <td>Splitthopp framåt (L): Bendelning 180° med kick</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h417.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H418</td>
+                    <td>Lantmätarhopp (L): 180° vändning, bendelning 135°-180°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h418.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H618</td>
+                    <td>Lantmätarhopp (L): 90° vändning, bendelning >135°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h618.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H818</td>
+                    <td>Lantmätarhopp (L): 180° vändning, bendelning ≥180°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h818.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H419</td>
+                    <td>Saxlantmätarhopp (L): Bendelning 135°-180° efter benväxling</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/h419.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H619</td>
+                    <td>Saxlantmätarhopp (L): Bendelning ≥180° efter benväxling</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h619.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1019</td>
+                    <td>Saxlantmätarhopp (L): Benväxling till mage, bendelning >135° efter benväxling</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1019.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1219</td>
+                    <td>Saxlantmätarhopp (L): Benväxling till mage, bendelning 180° efter benväxling</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1219.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H620</td>
+                    <td>Saxlantmätarhopp (L): 90° vändning till sidan, bendelning >135° efter benväxling</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/h620.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H820</td>
+                    <td>Saxlantmätarhopp (L): 90° vändning till sidan, bendelning >180° efter benväxling</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h820.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1020</td>
+                    <td>Saxlantmätarhopp (L): 180° vändning i flygfasen. Bendelning >135° efter benväxling</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1020.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H821frmt</td>
+                    <td>Butterfly</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h821frmt.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H821bkt</td>
+                    <td>Butterfly</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h821bkt.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B401</td>
+                    <td>Stående: Fria benet till sidan eller framåt 90°-120°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b401.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B601</td>
+                    <td>Stående: Fria benet till sidan, delning ≥120° utan handstöd</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b601.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B801</td>
+                    <td>Stående: Fria benet framåt, delning ≥120° utan handstöd</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b801.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1001</td>
+                    <td>Stående: På tå, fria benet till sidan, delning ≥120° utan handstöd</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/b1001.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1201</td>
+                    <td>Stående: På tå, fria benet framåt, delning ≥120° utan handstöd</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/b1201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B202</td>
+                    <td>Stående: På tå (tiptoes) <90°</td> <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B203</td>
+                    <td>Stående: Armböjningsställning, motsatt fot- och handstöd</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b203.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B403</td>
+                    <td>Stående: Sittande på hälen på en fot på tå utan handstöd. Fria benet â‰¥90°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b403.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B603</td>
+                    <td>Stående: På knä med sträckt höft > 90° utan handstöd</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b603.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B404</td>
+                    <td>Stående med handstöd: Fria benet till sidan, bendelning >120°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b404.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B604</td>
+                    <td>Stående med handstöd: Stående, fria benet framåt, bendelning >120°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b604.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B804</td>
+                    <td>Stående med handstöd: Stående, fria benet till sidan, bendelning >120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b804.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1004</td>
+                    <td>Stående med handstöd: På tå, fria benet framåt, bendelning >120°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/b1004.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B205</td>
+                    <td>Attityd framåt: På ett ben, utsträckt kropp. Fria benet 90°, vinkel i knäet 135°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b205.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B605</td>
+                    <td>Attityd framåt: På ett ben på tå, utsträckt kropp. Fria benet 90°, vinkel i knäet 135°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b605.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B406</td>
+                    <td>Attityd vriden: Fria benet 90° utåtvridet, överkroppen horisontell och vriden</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b406.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B606</td>
+                    <td>Attityd bakåt: Överkroppen i linje med stödbenet. Fria benet ≥90° utåtvridet</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b606.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1006</td>
+                    <td>Attityd bakåt: På tå. Överkroppen i linje med stödbenet. Fria benet ≥90° utåtvridet</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/b1006.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B407</td>
+                    <td>Hög attityd: Våghalvstående, fria benet böjt bakåt med handstöd. Fria benet â‰¥120°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b407.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B807</td>
+                    <td>Hög attityd: På ett ben, utsträckt kropp. Fria benet >90° bakåt, vinkel i knäet 90°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b807.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1207</td>
+                    <td>Hög attityd: På ett ben på tå, utsträckt kropp. Fria benet >90° bakåt, vinkel i knäet 90°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/b1207.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B208</td>
+                    <td>Våghalvstående: Överkroppen i horisontalplan. Fria benet 90°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b208.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B408</td>
+                    <td>Våghalvstående: Överkroppen i horisontalplan. Fria benet >90°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b408.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B209</td>
+                    <td>Våghalvstående: Framåt, fria benet 90°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b209.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B409</td>
+                    <td>Våghalvstående: Framåt, fria benet ≥120°</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b409.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B809</td>
+                    <td>Våghalvstående: Framåt, på tå, fria benet ≥120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b809.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1209</td>
+                    <td>Våghalvstående: Bakåt, fria benet >90°</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/b1209.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B210</td>
+                    <td>Våghalvstående: Sidan, fria benet 90°</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b210.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B610</td>
+                    <td>Våghalvstående: Sidan med handstöd, fria benet â‰¥120°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b610.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B810</td>
+                    <td>Våghalvstående: Sidan utan handstöd, fria benet â‰¥120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b810.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B211</td>
+                    <td>Stående: Huvudstående</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b211.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B411</td>
+                    <td>Stående: Underarmarna</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b411.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B811</td>
+                    <td>Stående: Handstående</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b811.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B212</td>
+                    <td>Stöd: Piksittande utan handstöd</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b212.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B612</td>
+                    <td>Stöd: Piksittande med enbart handstöd</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b612.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B613</td>
+                    <td>Stöd: Grensittande med en hand framför och den andra bakom kroppen</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b613.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1012</td>
+                    <td>Stöd: Piksittande med enbart handstöd, ben i 45° mot vågplan</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/b1012.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1212</td>
+                    <td>"Stöd: Spetsvinkelsittande ""V""-stöd"</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/b1212.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B214</td>
+                    <td>Stöd: Spindelhanstående. Även tillåtet med båda benen på ena armen</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b214.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B414</td>
+                    <td>Stöd: Hand, axlar och kindstöd (2 händer och 1 axel)</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b414.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B614</td>
+                    <td>Stöd: Stödvåg på armbågarna med bendelning ≥90°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b614.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B814</td>
+                    <td>Stöd: Stödvåg på armbågarna med samlade eller delade ben <90°</td> <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b814.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1014</td>
+                    <td>Stöd: Fri stödvåg med bendelning ≥90°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/b1014.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B1214</td>
+                    <td>Stöd: Fri stödvåg med samlade eller delade ben <90°</td> <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/b1214.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B415</td>
+                    <td>Brygga</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/b415.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B615</td>
+                    <td>Brygga: Fria benet sträckt ≥45°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b615.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B815</td>
+                    <td>Brygga: Fria benet i vertikalplan</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b815.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K801</td>
+                    <td>Kretsar: Dubbel benkrets, ett varv</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/k801.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1001</td>
+                    <td>Kretsar: Dubbel benkrets, minimum två varv</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/k1001.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1201</td>
+                    <td>Kretsar: Helikoterkrets två varv</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/k1201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K402</td>
+                    <td>Från handstående till stöd: Till spindelhandstående</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/k402.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K602</td>
+                    <td>Från handstående till stöd: Till grenpiksittande enbart med handstöd</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/k602.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K802</td>
+                    <td>Från handstående till stöd: Till stödvåg på armbågarna</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/k802.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1002</td>
+                    <td>Från handstående till stöd: Till fri stödvåg</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/k1002.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1202</td>
+                    <td>Från handstående till stöd: Till spetsvinkelsittande</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/k1202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K203</td>
+                    <td>Från stöd, brytning till handstående: Höfter > axelhöjd</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/k203.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K403</td>
+                    <td>Från stöd, brytning till handstående: Höfter < axelhöjd</td> <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/k403.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K603</td>
+                    <td>Från stöd, brytning till handstående: Grenpiksittande med enbart handstöd till handstående</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/k603.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K803</td>
+                    <td>Från stöd, brytning till handstående: Piksittande med enbart handstöd till handstående</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/k803.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1203</td>
+                    <td>Från stöd, brytning till handstående: Spetsvinkelsittande till handstående</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/k1203.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">K1204</td>
+                    <td>Från stöd, brytning till handstående: Fri stödvåg till handstående</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/k1204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl401</td>
+                    <td>Vågrörelse framåt/bakåt: Första obligatoriska momentet</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/obl401.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl601</td>
+                    <td>Vågrörelse framåt/bakåt: Andra obligatoriska momentet</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/obl601.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl402</td>
+                    <td>Vågrörelse sidan: Första obligatoriska momentet</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/obl402.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl602</td>
+                    <td>Vågrörelse sidan: Andra obligatoriska momentet</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/obl602.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl403</td>
+                    <td>Svingövningar: Första obligatoriska momentet</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/obl403.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl603</td>
+                    <td>Svingövningar: Andra obligatoriska momentet</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/obl603.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl404</td>
+                    <td>Parövningar: Första obligatoriska momentet</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/obl404.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">Obl604</td>
+                    <td>Parövningar: Andra obligatoriska momentet</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/obl604.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A201</td>
+                    <td>Hjulning</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/a201.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A401</td>
+                    <td>Sidvolt</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/a401.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A202</td>
+                    <td>Rondat</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/a202.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A203</td>
+                    <td>Brygga framåt</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/a203.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A204</td>
+                    <td>Brygga bakåt</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/a204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A405</td>
+                    <td>Flick-flack</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/a405.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A605</td>
+                    <td>Whipback</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/a605.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A206</td>
+                    <td>Handvolt</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/a206.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A406</td>
+                    <td>Handvolt II</td>
+                    <td>0.40</td>
+                    <td><img class="symbol" src="resources/svgs/a406.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A607</td>
+                    <td>Frivolt</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/a607.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">A608</td>
+                    <td>Salto</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/a608.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H822</td>
+                    <td>Hopp med start från ett ben med 540° skruv, landning på mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h822.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1222</td>
+                    <td>Pikerat grenhopp (J) med 360° vändning i luften till liggande på mage</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1222.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H822</td>
+                    <td>Hopp med start från ett ben med 540° skruv, landning på mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h822.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1222</td>
+                    <td>Pikerat grenhopp (J) med 360° vändning i luften till liggande på mage</td>
+                    <td>1.20</td>
+                    <td><img class="symbol" src="resources/svgs/h1222.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1023</td>
+                    <td>Splitthopp med 360° vändning. Bendelning >135°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1023.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1024</td>
+                    <td>Pikerat grenhopp med 540° vändning</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1024.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B204</td>
+                    <td>Stående på ett ben på hel fot, med fria benet i sidan i eller över 90° med handstöd</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B816</td>
+                    <td>Stöd: V-stöd med höftvinkel ?45°, bendelning 10-45°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b816.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B616</td>
+                    <td>Stöd: V-stöd med höftvinkel ?45°, bendelning >45°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b616.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1023</td>
+                    <td>Splitthopp med 360° vändning. Bendelning >135°</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1023.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H1024</td>
+                    <td>Pikerat grenhopp med 540° vändning</td>
+                    <td>1.00</td>
+                    <td><img class="symbol" src="resources/svgs/h1024.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B204</td>
+                    <td>Stående på ett ben på hel fot, med fria benet i sidan i eller över 90° med handstöd</td>
+                    <td>0.20</td>
+                    <td><img class="symbol" src="resources/svgs/b204.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B816</td>
+                    <td>Stöd: V-stöd med höftvinkel â‰¤45°, bendelning 10-45°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b816.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B616</td>
+                    <td>Stöd: V-stöd med höftvinkel â‰¤45°, bendelning >45°</td>
+                    <td>0.60</td>
+                    <td><img class="symbol" src="resources/svgs/b616.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B609b</td>
+                    <td>Våghalvstående: Framåt, på tå, fria benet â‰¥120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b609b.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B609a</td>
+                    <td>Våghalvstående med böjt ben och handstöd. Båda händerna placerade på foten, fria benen >120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b609a.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H810b</td>
+                    <td>Grupperat hopp (J): 180° vändning, landning liggande på mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h810b.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">H810a</td>
+                    <td>Pikerat hopp (J): Grupperat hopp, landning liggande på mage</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/h810a.svg"></td>
+                </tr>
+                <tr>
+                    <td class="bold">B817</td>
+                    <td>Stödvåg med delade raka ben, ett ben vilar på motsvarande arm med bendelning >120°</td>
+                    <td>0.80</td>
+                    <td><img class="symbol" src="resources/svgs/b817.svg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>First name : <span data-bind="text: firstName"></span></p>
+    <p>First name : <input data-bind="value: firstName"></span></p>
+    <script src="scripts/underlag.js" type="text/javascript"></script>
 </body>
+
 </html>
-
-
-
